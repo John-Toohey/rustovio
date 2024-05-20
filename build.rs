@@ -19,7 +19,7 @@ fn main() {
     } else if target.contains("linux") {
         println!("cargo:rustc-link-lib=dylib=stdc++");
     } else if target.contains("wasm32") {
-        // println!("cargo:rustc-link-lib=dylib=em++");
+        println!("cargo:rustc-link-lib=dylib=stdc++");
     } else {
         unimplemented!();
     }
